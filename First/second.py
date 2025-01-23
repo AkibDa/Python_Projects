@@ -1,5 +1,5 @@
-a=5;
-b=7;
+a=int(input("Enter first number: "));
+b=int(input("Enter second number: "));
 
 ans1 = a+b;
 print("Addition of",a,"and",b,"is equal to",ans1);
