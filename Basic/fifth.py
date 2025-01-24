@@ -1,3 +1,4 @@
+#Using time module
 import time
 
 timestamp = time.strftime('%H:%M:%S')
