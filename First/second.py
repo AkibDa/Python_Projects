@@ -20,4 +20,5 @@ match c:
     print("Multiplication of",a,"and",b,"is equal to",a*b);
   case '/':
     print("Division of",a,"and",b,"is equal to",a/b);
-
+  case _:
+    print("Choose a correct operator");
