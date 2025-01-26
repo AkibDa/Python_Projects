@@ -30,3 +30,11 @@ elif(num < 0):
   print("Number is Negative");
 else:
   print("Number is Zero");
+
+b = 330
+c = 3303
+
+print("B") if b > c else print("=") if c == b else print("C")
+
+d = 9 if b>c else 0
+print(d)
