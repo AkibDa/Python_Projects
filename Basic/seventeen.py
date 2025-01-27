@@ -29,3 +29,22 @@ lines = ['line 1','line 2','line 3']
 for line in lines:
   f.write(line + '\n')
 f.close
+
+with open('file.txt','r') as f:
+  f.seek(10)
+
+  data = f.read(5)
+
+with open('file.txt','r') as f:
+  data = f.read(10)
+
+  current_position = f.tell()
+
+  f.seek(current_position)
+
+with open('sample.txt','w') as f:
+  f.write('Hello World!')
+  f.truncate(5)
+
+with open('sample.txt','r') as f:
+  print(f.read())
