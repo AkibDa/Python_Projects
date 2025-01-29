@@ -1,3 +1,6 @@
+import shutil
+import os
+
 numbers = [1, 2, 3, 4, 5]
 
 while(n := len(numbers)) > 0:
@@ -22,3 +25,10 @@ print(happy := False)
 foods = list()
 while (food := input("What food you like?: ")) != "quit":
   foods.append(food)
+
+# shutil.copy("main.py","main2.py")
+# shutil.copytree(".tutorial","mytutorial")
+# shutil.move(".tutorial/file.file","file.file")
+# shutil.rmtree("mytutorial")
+# os.remove("file.file")
+
