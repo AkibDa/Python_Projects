@@ -1,8 +1,17 @@
 import requests
 from creds import API_KEY
+import json
 
-url = f'https://newsapi.org/v2/top-headlines?country=us&apiKey={API_KEY}'
+query = input("What type of news are you interested in? ")
+
+url = f'https://newsapi.org/v2/everything?q={query}&from=2025-01-01&sortBy=publishedAt&apiKey={API_KEY}'
 
 response = requests.get(url)
 
-print(response.json())
+news = json.loads(response.text)
+# print(news, type(news))
+
+for article in news["articles"]:
+  print("Title:",article["title"])
+  print("Desc:",article["description"])
+  print("------------------------------------------")
