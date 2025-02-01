@@ -1,9 +1,10 @@
 import os
 import time
 
-timestamp = time.strftime('%H:%M:%S')
-print(timestamp);
-os.system(f"say The time is {timestamp}")
-os.system("say drink some water")
+Repeat_Interval = 3600 #Repeat frequency in seconds
 
-hour = int(time.strftime('%H'))
+while True:
+  command = "osascript -e \'say \"Hello Akib Drink Water\"\'; osascript -e \'display alert \"Hey Akib, Drink Water\"\'"
+
+  os.system(command)
+  time.sleep(Repeat_Interval)
