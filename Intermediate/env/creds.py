@@ -1,2 +1,0 @@
-API_KEY1 = "32977e037b734114adc59dfcb2fcb2ff" # type: ignore
-API_KEY2 = "c12d05af056b4404b8d134821251402"
