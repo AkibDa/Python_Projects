@@ -1,10 +1,10 @@
 import requests
-from creds import API_KEY
+from creds import API_KEY1
 import json
 
 query = input("What type of news are you interested in? ")
 
-url = f'https://newsapi.org/v2/everything?q={query}&from=2025-01-01&sortBy=publishedAt&apiKey={API_KEY}'
+url = f'https://newsapi.org/v2/everything?q={query}&from=2025-01-01&sortBy=publishedAt&apiKey={API_KEY1}'
 
 response = requests.get(url)
 
