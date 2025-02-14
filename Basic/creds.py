@@ -1,1 +1,0 @@
-API_KEY = "32977e037b734114adc59dfcb2fcb2ff" # type: ignore
