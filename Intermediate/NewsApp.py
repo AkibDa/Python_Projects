@@ -1,5 +1,5 @@
 import requests
-from creds import API_KEY1
+from env.creds import API_KEY1
 import json
 
 query = input("What type of news are you interested in? ")

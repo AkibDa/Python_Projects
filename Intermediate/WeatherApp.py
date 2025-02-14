@@ -1,5 +1,5 @@
 import requests
-from creds import API_KEY2
+from env.creds import API_KEY2
 import json
 
 location = input("Where do you live? \n").capitalize
